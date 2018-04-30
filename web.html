@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Devanshu Sehgal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <header></header>
+
+    <main>
+        <br>
+        <h4 class="center-align">Web Projects</h4>
+        <br>
+
+        <div class="grid row">
+            <div ng-repeat="project in projects" class="col s12 m3">
+                <div class="card white">
+                    <a ng-if="project.extras[0] == ''" class="btn download red btn-floating"><i class="material-icons">cloud_off</i></a>
+                    <a ng-if="project.extras[0] != ''" ng-href="{{project.extras[0]}}" class="btn download blue btn-floating" target="_blank"><i class="material-icons">launch</i></a>
+
+                    <div class="screenshot center-align">
+                        <img ng-src="/assets/screenshots/{{project.shots[!project.current ? 0 : project.current]}}" alt="{{project.title}}">
+                    </div>
+
+                    <div class="info">
+                        <h5 class="blue-text">{{project.title}}</h5>
+                        <p class="grey-text text-darken-1">{{project.descr}}</p>
+                        <div class="mb-10">
+                            <div ng-repeat="tag in project.tags" class="chip">
+                                <img ng-src="/assets/tags/{{tag == 'C#' ? 'csharp' : tag.toLowerCase()}}.png" alt="{{tag}}">
+                                {{tag}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer blue-grey darken-1"></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
