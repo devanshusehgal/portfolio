@@ -88,4 +88,6 @@ app.controller('myCtrl', function($scope, $interval) {
             $scope.projects[j].current = next;
         }
     }, 1500);
+
+    $('.wfl').removeClass('wfl');
 });
