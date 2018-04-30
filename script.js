@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('header').load('header.html',() => {
         $('.sidenav').sidenav();
-        $('a[href="/'+getPage()+'"]').hide();
+        $('a[href="/portfolio/'+getPage()+'"]').hide();
         $('.fixed-action-btn').floatingActionButton();
     });
     $('footer').load('footer.html');
