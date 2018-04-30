@@ -26,7 +26,7 @@
                     <a ng-if="project.extras[0] != ''" ng-href="{{project.extras[0]}}" class="btn download blue btn-floating" target="_blank"><i class="material-icons">launch</i></a>
 
                     <div class="screenshot center-align">
-                        <img ng-src="/assets/screenshots/{{project.shots[!project.current ? 0 : project.current]}}" alt="{{project.title}}">
+                        <img ng-src="/portfolio/assets/screenshots/{{project.shots[!project.current ? 0 : project.current]}}" alt="{{project.title}}">
                     </div>
 
                     <div class="info">
@@ -34,7 +34,7 @@
                         <p class="grey-text text-darken-1">{{project.descr}}</p>
                         <div class="mb-10">
                             <div ng-repeat="tag in project.tags" class="chip">
-                                <img ng-src="/assets/tags/{{tag == 'C#' ? 'csharp' : tag.toLowerCase()}}.png" alt="{{tag}}">
+                                <img ng-src="/portfolio/assets/tags/{{tag == 'C#' ? 'csharp' : tag.toLowerCase()}}.png" alt="{{tag}}">
                                 {{tag}}
                             </div>
                         </div>
