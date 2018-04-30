@@ -25,7 +25,7 @@
             <div ng-repeat="project in projects" class="col s12 m3">
                 <div class="card white">
                     <a ng-if="project.extras[0] == ''" class="btn download red btn-floating"><i class="material-icons">cloud_off</i></a>
-                    <a ng-if="project.extras[0] != ''" ng-href="{{project.extras[0]}}" class="btn download blue btn-floating" target="_blank"><i class="material-icons">launch</i></a>
+                    <a ng-if="project.extras[0] != ''" ng-href="{{project.extras[0]}}" class="btn download green btn-floating" target="_blank"><i class="material-icons">launch</i></a>
 
                     <div class="screenshot center-align">
                         <img ng-src="/portfolio/assets/screenshots/{{project.shots[!project.current ? 0 : project.current]}}" alt="{{project.title}}">
