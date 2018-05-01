@@ -8,11 +8,6 @@ $(document).ready(function () {
     $('.tooltipped').tooltip();
 });
 
-function showToast(message, error) {
-    Materialize.Toast.removeAll();
-    Materialize.toast(message, 2000, error ? 'red' : '');
-}
-
 function getPage() {
     return location.href.split('/').pop();
 }

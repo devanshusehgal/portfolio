@@ -63,3 +63,7 @@ main {
 .wfl {
     display: none;
 }
+
+.material-tooltip {
+    background-color: rgba(16, 90, 247, 0.6);
+}
