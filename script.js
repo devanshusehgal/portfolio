@@ -5,6 +5,7 @@ $(document).ready(function () {
         $('.fixed-action-btn').floatingActionButton();
     });
     $('footer').load('footer.html');
+    $('.tooltipped').tooltip();
 });
 
 function showToast(message, error) {
