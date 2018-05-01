@@ -19,6 +19,7 @@ function getPage() {
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $interval) {
     $scope.projects = [
+        {'title':'Deternet Social','descr':'A completely decentralised social network. Direct communication without servers.','tags':['Android','Java', 'Web', 'NodeJS'],'shots':['shot64.jpg'],'extras':[''],'level':101},
         {'title':'Audio Recorder','descr':'A simple tool to record user\'s audio on Android.','tags':['Android','Java'],'shots':['shot0.jpg'],'extras':['https://drive.google.com/open?id=1HPTh8n80ajnQ5_bqBjkmGemK9Mspmt3E'],'level':0},
         {'title':'Audio Share','descr':'A simple tool to download and share audio files on Android.','tags':['Android','Java','PHP','MySQL'],'shots':['shot1.jpg'],'extras':['https://drive.google.com/open?id=1SwHXNrORO6OhSdcU4kvIzhdVbH_ATHxS'],'level':0},
         {'title':'Bollywood Dialogues','descr':'App to load and view bollywood dialogues based on actors on Android.','tags':['Android','Java'],'shots':['shot2.jpg','shot3.jpg'],'extras':['https://drive.google.com/open?id=1e_13BzF9P1Nxax34FEXmyTI5ifw6JFfU'],'level':0},
