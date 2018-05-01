@@ -65,7 +65,5 @@ main {
 }
 
 .material-tooltip {
-    background-color: rgba(255, 152, 0, 0.8);
-    color: #323232;
-    border: 1px solid;
+    background-color: rgba(50, 50, 50, 0.75);
 }
