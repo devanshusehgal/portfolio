@@ -32,9 +32,17 @@ main {
     overflow: hidden;
 }
 
-.grid .screenshot>img {
-    max-height: 100%;
+.screenshot>.img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
+/* .grid .screenshot>img {
+    max-height: 100%;
+} */
 
 .grid .info {
     padding: 1px 15px;
